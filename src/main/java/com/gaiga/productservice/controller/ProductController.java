@@ -1,6 +1,7 @@
 package com.gaiga.productservice.controller;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.modelmapper.ModelMapper;
@@ -40,7 +41,6 @@ public class ProductController {
 	public ResponseEntity<List<ResponseProduct>> getProducts(){
 		//위치상 Dto가 맞는듯한데, service에서 이렇게 해버린김에..!
 		Iterable<ProductEntity> productList = productService.getAllProducts();
-		
 		List<ResponseProduct> result = new ArrayList<>();
 		productList.forEach(v -> {
 			result.add(new ModelMapper().map(v, ResponseProduct.class));

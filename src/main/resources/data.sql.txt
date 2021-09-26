@@ -1,6 +1,6 @@
 insert into product(product_id, product_name, stock, unit_price)
-values('PRODUCT-001', 'GAIGA', 100, 1300);
+values('PRODUCT-0001', 'GAIGA', 100, 1300);
 insert into product(product_id, product_name, stock, unit_price)
-values('PRODUCT-002', 'GOUNI', 120, 1600);
+values('PRODUCT-0002', 'GOUNI', 120, 1600);
 insert into product(product_id, product_name, stock, unit_price)
-values('PRODUCT-003', 'GANG GANG', 160, 1830);
+values('PRODUCT-0003', 'GANG GANG', 160, 1830);
